@@ -1,4 +1,8 @@
 import json
+import sys
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
 from mastering_rag.cli import dependencies
 from mastering_rag.generation import generate_answer, validate_answer
